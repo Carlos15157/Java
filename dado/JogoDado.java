@@ -14,11 +14,12 @@ public class JogoDado {
 		char  opcao = 's';
 		Scanner teclado = new Scanner(System.in);
 		while (opcao=='s') {
-			System.out.println("Lançamento do Dado......");
+			System.out.println("LanÃ§amento do Dado......");
 			int dado = (int) (Math.random()*6 +1);
 			System.out.println("Face: " + dado );
-			System.out.println("Deseja lançar o dado novamente(s/n)?");
+			System.out.println("Deseja lanÃ§ar o dado novamente(s/n)?");
 			opcao=teclado.next().charAt(0); 
+			teclado.close();
 		}
 		
 
