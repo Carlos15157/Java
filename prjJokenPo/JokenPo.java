@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class JokenPo {
 	public static void main(String[] args) {
-		//lógica do jogador
+		//lÃ³gica do jogador
 		int jogador;
 		Scanner mao = new Scanner(System.in);
 		System.out.println("___JoKenPo___");
@@ -19,7 +19,7 @@ public class JokenPo {
 		System.out.println("1. Pedra");
 		System.out.println("2. Papel");
 		System.out.println("3. Tesoura");
-		System.out.println("Digite a opção desejada: ");
+		System.out.println("Digite a opÃ§Ã£o desejada: ");
 		jogador = mao.nextInt();
 		switch (jogador) {
 		case 1:
@@ -32,11 +32,11 @@ public class JokenPo {
 			System.out.println("Jogador escolheu TESOURA");
 			break;
 			default:
-				System.out.println("Opção Inválida");
+				System.out.println("OpÃ§Ã£o InvÃ¡lida");
 				break;
 		}
 		
-		//lógica do computador 
+		//lÃ³gica do computador 
 		int computador = (int)(Math.random()*3+1);
 		switch (computador) {
 		case 1:
@@ -49,11 +49,11 @@ public class JokenPo {
 			System.out.println("Computador escolheu TESOURA");
 			break;
 			default:
-				System.out.println("Opção Inválida");
+				System.out.println("OpÃ§Ã£o InvÃ¡lida");
 				break;
 		}
 		
-		//lógica do vencedor
+		//lÃ³gica do vencedor
 		if (jogador != computador) {
 			if ((jogador == 1 && computador == 3) || (jogador == 2 && computador == 1) || (jogador== 3 && computador ==2)) {
 				System.out.println("JOGADOR VENCEU");	
@@ -65,7 +65,7 @@ public class JokenPo {
 		}
 		
 		
-
+mao.close();
 	}
 
 }
